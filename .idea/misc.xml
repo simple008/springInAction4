@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FUSUsageTrigger">
+    <session id="-446726018">
+      <usages-collector id="statistics.spring.core.usages.trigger">
+        <counts>
+          <entry key="fixes.SpringFacetInspection.AddFacetFix" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/12_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/13_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/14_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/15_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/16_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/17_springInAction" />
+    <file type="web" url="file://$PROJECT_DIR$/4_springInActionNew" />
+    <file type="web" url="file://$PROJECT_DIR$/6_SpringInAction" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/3_springInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/4_springInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/5_springInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/6_springInAction/pom.xml" />
+        <option value="$PROJECT_DIR$/7_springInAction/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/c"
+       xmlns:aop="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/aop
+      http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.cc.lpz"/>
+    <aop:aspectj-autoproxy />
+    <bean class="com.cc.lpz.Audience"/>
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:before pointcut="execution(** concert.performance.perform(..))" method="silenceCellPhones"/>
+            <aop:before pointcut="execution(** concert.performance.perform(..))" method="takeSeats"/>
+            <aop:after pointcut="execution(** concert.performance.perform(..))" method="applause"/>
+            <aop:after pointcut="execution(** concert.performance.perform(..))" method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect ref="audience">
+        <aop:pointcut id ="performance"
+                    expression="execution(** concert.performance.perform(..))" />
+            <aop:before pointcut-ref="performance" method="silenceCellPhones"/>
+            <aop:before pointcut-ref="performance" method="takeSeats"/>
+            <aop:after pointcut-ref="performance" method="applause"/>
+            <aop:after pointcut-ref="performance" method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
+
+
+    <bean id ="trackCounter" class="soundsystem.TrackCounter"/>
+    <bean id = "cd" class = "soundsystem.BlankDisc"/>
+    <property name="title" value=Sgt.pepper's Lonely Hearts Club Band"/>
+    <property name ="artist" value = "The Beatles"/>
+    <property name = "track"/>
+    <list>
+        <value>Sgt.Pepper's Lonely hearts club band</value>
+        <value>With a Little Help from My friend</value>
+        <value>Getting Better</value>
+        <value>Fixing a Hole</value>
+    </list>
+    </property>
+    <aop:config>
+        <aop:aspect ref="trackCounter">
+            <aop:pointcut id="trackPlayed" expression="execution(* soundsystem.CompactDisc.playTrack(int)) and args(trackNumber)"/>
+
+        </aop:aspect>
+    </aop:config>
+</beans>

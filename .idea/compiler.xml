@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="12_springInAction" />
+        <module name="13_springInAction" />
+        <module name="14_springInAction" />
+        <module name="15_springInAction" />
+        <module name="16_springInAction" />
+        <module name="17_springInAction" />
+        <module name="1_springInAction" />
+        <module name="2_springInAction" />
+        <module name="3_springInAction" />
+        <module name="4_springInAction" />
+        <module name="4_springInActionNew" />
+        <module name="5_springInAction" />
+        <module name="6_SpringInAction" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="3_springInAction" target="1.7" />
+      <module name="4_springInAction" target="1.7" />
+      <module name="5_springInAction" target="1.7" />
+      <module name="6_springInAction" target="1.7" />
+      <module name="7_springInAction" target="1.7" />
+      <module name="_5_springInAction" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
